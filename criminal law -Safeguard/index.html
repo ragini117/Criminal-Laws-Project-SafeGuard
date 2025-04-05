@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Self-Defense Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            <i class="fas fa-balance-scale fa-2x" style="color: rgb(232, 186, 232); margin-right: 10px;"></i> 
+            Legal Self-Defense Guide
+        </h1>
+        
+        
+        <p>Learn how to protect yourself in various legal situations under Indian law.</p>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search legal topics..." onkeyup="filterCategories()">
+            <span class="search-icon">🔍</span>
+        </div>
+    </header>
+    <main>
+        <section id="categories">
+
+            <!--  1st CARD -->
+
+            <div class="category" onclick="showDetails('criminal')">
+                <i class="fas fa-gavel fa-2x" style="color: #6a0dad;"></i> Criminal Laws (IPC & CrPC) ➡ 
+            </div>
+            
+            
+
+
+            <div id="modal-criminal" class="modal">
+                <div class="modal-header">
+                    <h3>Criminal Laws (IPC & CrPC)</h3>
+
+                    <span class="close-btn" onclick="closeModal('modal-criminal')">&times;</span>
+                </div>
+                <!-- button  -->
+
+                <div class="tabs">
+                    <button class="tab active" onclick="showContent(0, 'modal-criminal')">Criminal Offenses</button>
+                    <button class="tab" onclick="showContent(1, 'modal-criminal')">Cybercrimes</button>
+                    <button class="tab" onclick="showContent(2, 'modal-criminal')">Traffic Violations</button>
+                    <button class="tab" onclick="showContent(3, 'modal-criminal')">Drug-related Offenses</button>
+                </div>
+
+                <!-- content of button  -->
+                <div class="content-container">
+                    <!-- content1 -->
+                    <div class="content active">
+
+                        <h4>Criminal offenses </h4>
+                        <p>Offenses like theft, assault, fraud, defamation under the Indian Penal Code (IPC) can lead to
+                            arrest, jail time, and fines. These charges require immediate legal attention.</p>
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Know your rights if arrested (right to remain silent, right to an attorney)</li>
+                            <li>Document everything related to the incident</li>
+                            <li>Never resist arrest but assert your right to legal counsel
+                            </li>
+                            <li>Don't sign any documents without legal advice
+                            </li>
+                            <li>Collect evidence and witness statements that support your case
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can represent you during police questioning, file for bail, challenge illegal
+                            detention, prepare a strong defense strategy, cross-examine witnesses, and negotiate for
+                            reduced charges or settlements where applicable.</p>
+                    </div>
+
+                    <!-- content 2  -->
+                    <div class="content">
+                        <h4>Cybercrimes</h4>
+                        <p>Online harassment, hacking, spreading fake news, or financial fraud are regulated under the
+                            IT Act. These offenses carry serious penalties including imprisonment.
+                            .</p>
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+                        <ul>
+                            <li>Maintain digital hygiene (strong passwords, updated software)
+                            </li>
+                            <li>Document all evidence of online harassment or fraud</li>
+                            <li>Report incidents to cybercrime authorities promptly</li>
+                            <li>Be cautious about information shared online
+                            </li>
+                            <li>Keep records of all digital communications
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate specializing in cyber law can help you file proper complaints with cybercrime
+                            cells, obtain restraining orders against harassers, assist in removing defamatory content,
+                            and build a technical defense with expert witnesses.</p>
+                    </div>
+                    <!-- content3 -->
+                    <div class="content">
+                        <h4>Traffic violations </h4>
+                        <p>Drunk driving, overspeeding, rash driving, or driving without a license can result in heavy
+                            fines, license suspension, or even imprisonment for serious cases.
+                            .</p>
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+                        <ul>
+                            <li>Always carry valid driving documents
+
+                            </li>
+                            <li>Document all evidence of online harassment or fraud</li>
+                            <li>Follow traffic rules strictly
+                            </li>
+                            <li>Install dashcams to document incidents
+                            </li>
+                            <li>Never drive under the influence</li>
+                            <li>Cooperate with officers but know your rights
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can contest inappropriate charges, negotiate for reduction of penalties,
+                            represent you in Motor Vehicle Act cases, and help with license restoration proceedings.</p>
+                    </div>
+
+                    <!-- content 4 -->
+                    <div class="content">
+                        <h4>Drug-related Offenses</h4>
+                        <p>Possession, consumption, or distribution of illegal drugs under the NDPS Act carries severe
+                            penalties including long jail terms.</p>
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+                        <ul>
+                            <li>Be aware of what substances are controlled under the NDPS Act </li>
+                            <li>Never carry substances for others</li>
+
+                            <li>Know the difference between quantities classified as 'small' vs 'commercial' </li>
+                            <li>Be aware of your rights regarding search and seizure</li>
+                            <li>Insist on proper documentation during any search procedures </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can ensure proper legal procedures were followed during search and seizure,
+                            contest quantity determinations that affect sentencing, file for bail where applicable, and
+                            prepare technical defenses based on forensic evidence.</p>
+                    </div>
+                </div>
+            </div>
+            <!--    2nd  CARD -->
+
+            <div class="category" onclick="showDetails('civil')">
+                <i class="fas fa-file-contract fa-2x" style="color: #6a0dad;"></i> Civil Laws ➡
+            </div>
+            
+            <div id="modal-civil" class="modal">
+                <div class="modal-header">
+                    <h3>Civil Laws</h3>
+                    <span class="close-btn" onclick="closeModal('modal-civil')">&times;</span>
+                </div>
+                <!-- buttons -->
+                <div class="tabs">
+                    <button class="tab active" onclick="showContent(0, 'modal-civil')">Defamation (Sec
+                        499 & 500 IPC)</button>
+                    <button class="tab" onclick="showContent(1, 'modal-civil')">Contract Disputes</button>
+                    <button class="tab" onclick="showContent(2, 'modal-civil')">Property Disputes</button>
+                    <button class="tab" onclick="showContent(3, 'modal-civil')">Consumer Rights
+                        Violations</button>
+
+
+
+
+                </div>
+                <div class="content-container">
+                    <div class="content active">
+
+                        <h4>Defamation (Sec 499 & 500 IPC) </h4>
+
+                        <p>Making false statements that harm someone's reputation, whether spoken (slander) or written
+                            (libel), can lead to civil damages or criminal penalties.</p>
+
+
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+                        <ul>
+                            <li>Be careful about public statements regarding individuals or organizations
+                            </li>
+                            <li>Ensure facts are verified before making public accusations</li>
+                            <li>Keep records of evidence supporting any statements you make publicly
+
+                            </li>
+                            <li>Understand that opinions are generally protected but presented facts must be true
+                            </li>
+                            <li>Be particularly careful on social media platforms
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can defend you by establishing truth as a defense, proving fair comment,
+                            demonstrating lack of harm to reputation, or negotiating settlements outside court to
+                            minimize publicity.</p>
+                    </div>
+
+                    <!-- content 2 -->
+
+                    <div class="content">
+                        <h4>Contract Disputes</h4>
+                        <p>Breach of agreements, unpaid dues, or violations of legal contracts can lead to civil
+                            litigation and financial damages.
+                        </p>
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+                        <ul>
+                            <li>Always get agreements in writing with clear terms
+                            </li>
+                            <li>Keep thorough records of all communications
+                            </li>
+                            <li>Document any breaches with evidence
+                            </li>
+                            <li>Send formal notices before escalating to legal action
+
+                            </li>
+                            <li>Consider alternative dispute resolution methods before litigation
+
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can review contracts for enforceability, draft notices for breach, represent you
+                            in negotiations, prepare for litigation if necessary, and advise on the most cost-effective
+                            resolution strategies.</p>
+                    </div>
+                    <!-- content 3 -->
+
+
+                    <div class="content">
+                        <h4>Property Disputes
+                        </h4>
+
+                        <p>Illegal possession, land encroachments, or landlord-tenant conflicts involve complex property
+                            laws and can result in prolonged litigation.</p>
+
+
+
+
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+                        <ul>
+                            <li>Ensure all property documents are properly registered
+
+                            </li>
+                            <li>Conduct thorough title verification before purchase
+                            </li>
+                            <li>Maintain boundary markers and document encroachments
+
+
+                            </li>
+                            <li>Follow proper legal procedures for evictions or possession
+
+                            </li>
+                            <li>Keep all tax receipts and ownership documents safely
+
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can file appropriate suits for possession, represent you in eviction proceedings,
+                            negotiate settlements, handle title disputes, and obtain injunctions against illegal
+                            construction or encroachment.</p>
+                    </div>
+                    <!-- content 4 -->
+
+                    <div class="content">
+                        <h4>Consumer Rights Violations
+                        </h4>
+                        <p>Fraud by businesses, misleading advertisements, or defective products are covered under the
+                            Consumer Protection Act, providing remedies to consumers.</p>
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+                        <ul>
+                            <li>Keep all receipts, warranties, and proof of purchase
+                            </li>
+                            <li>Document defects or issues with products/services
+                            </li>
+                            <li>Communicate complaints in writing to businesses first
+                            </li>
+                            <li>Take photos/videos as evidence where relevant
+                            </li>
+                            <li>File complaints with consumer forums within limitation periods
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can file consumer complaints in appropriate forums, calculate proper compensation
+                            claims, represent you in consumer courts, negotiate with businesses for settlements, and
+                            appeal adverse decisions if necessary..</p>
+                    </div>
+                </div>
+            </div>
+            <!--3 CARD -->
+
+            <div class="category" onclick="showDetails('financial')">
+                <i class="fas fa-money-bill-wave fa-2x" style="color: #6a0dad;"></i> Financial & Tax Laws ➡
+            </div>
+            
+
+            <div id="modal-financial" class="modal">
+                <div class="modal-header">
+                    <h3>Financial & Tax Laws</h3>
+                    <span class="close-btn" onclick="closeModal('modal-financial')">&times;</span>
+                </div>
+                <!-- buttons -->
+                <div class="tabs">
+                    <button class="tab active" onclick="showContent(0, 'modal-financial')">Income Tax Evasion </button>
+                    <button class="tab" onclick="showContent(1, 'modal-financial')">GST Non-compliance
+                    </button>
+                    <button class="tab" onclick="showContent(2, 'modal-financial')">Loan Defaults
+                    </button>
+                    <button class="tab" onclick="showContent(3, 'modal-financial')">Money Launderings</button>
+
+
+
+
+                </div>
+                <div class="content-container">
+                    <div class="content active">
+
+                        <h4>Income Tax Evasion </h4>
+
+                        <p>Non-payment or misreporting of income can lead to penalties, prosecution, and even
+                            imprisonment under the Income Tax Act.
+                        </p>
+
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Maintain proper financial records for at least 7 years
+
+                            </li>
+                            <li>File returns accurately and on time even if no tax is due
+                            </li>
+                            <li>Consult tax professionals for complex transactions
+                            </li>
+                            <li>Respond promptly to tax notices
+                            </li>
+                            <li>Declare all sources of income completely
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>A tax advocate can represent you before tax authorities, file appeals against incorrect
+                            assessments, negotiate penalty reductions, prepare responses to notices, and advise on legal
+                            tax planning strategies.</p>
+                    </div>
+
+                    <!-- content 2 -->
+
+                    <div class="content">
+                        <h4>GST Non-compliance
+                        </h4>
+                        <p>Businesses failing to comply with GST rules can face penalties, interest charges, and
+                            business disruptions.
+
+                        </p>
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Register for GST if your business crosses the threshold
+
+                            </li>
+                            <li>File returns on time even if nil returns
+
+                            </li>
+                            <li>Maintain proper invoices and accounting records
+
+                            </li>
+                            <li>Understand which exemptions apply to your business
+                            </li>
+                            <li>Implement proper accounting systems for GST compliance
+
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>A tax advocate can help with GST registration, filing appeals against incorrect assessments,
+                            representing during GST audits, obtaining refunds, and correcting past filing errors.</p>
+                    </div>
+                    <!-- content 3 -->
+
+
+                    <div class="content">
+                        <h4>Loan Defaults
+                        </h4>
+
+                        <p>Banks can take legal action for non-repayment of loans under the SARFAESI Act, potentially
+                            seizing assets offered as security. </p>
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Communicate with lenders proactively if facing financial difficulties
+
+
+                            </li>
+                            <li>Apply for loan restructuring before defaulting
+
+                            </li>
+                            <li>Keep records of all payments and communications
+                            </li>
+                            <li>Understand the security documents you've signed
+                            </li>
+                            <li>Respond to all legal notices promptly
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can negotiate with banks for restructuring, challenge improper seizure
+                            procedures, file for debt relief in appropriate forums, and represent you in debt recovery
+                            tribunals..</p>
+                    </div>
+                    <!-- content 4 -->
+
+                    <div class="content">
+                        <h4>Money Laundering
+                        </h4>
+                        <p>Being unknowingly involved in illegal money transactions can lead to serious charges under
+                            the Prevention of Money Laundering Act.
+                        </p>
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Verify the source of funds in significant transactions
+                            </li>
+                            <li>Be cautious about becoming a financial signatory for others
+                            </li>
+                            <li>Understand KYC procedures and their importance
+                            </li>
+                            <li>Report suspicious transaction requests to authorities
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can establish lack of knowledge/intent in money laundering cases, challenge
+                            attachment of property orders, represent during Enforcement Directorate investigations, and
+                            build defenses based on procedural violations.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 4rt CARD-->
+            <div class="category" onclick="showDetails('cyber')">
+                <i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> Cyber & Privacy Laws ➡
+            </div>
+            
+            <div id="modal-cyber" class="modal">
+                <div class="modal-header">
+                    <h3>Cyber & Privacy Laws</h3>
+                    <span class="close-btn" onclick="closeModal('modal-cyber')">&times;</span>
+                </div>
+                <!-- buttons -->
+                <div class="tabs">
+                    <button class="tab active" onclick="showContent(0, 'modal-cyber')">Violation of Privacy
+                    </button>
+                    <button class="tab" onclick="showContent(1, 'modal-cyber')">Illegal Downloading
+                    </button>
+                    <button class="tab" onclick="showContent(2, 'modal-cyber')">Spreading Misinformation
+                    </button>
+                </div>
+                <div class="content-container">
+                    <div class="content active">
+                        <h4>Violation of Privacy
+                        </h4>
+                        <p>Unauthorized sharing of someone's personal data is regulated under the IT Act and can lead to
+                            compensation claims and penalties.
+                        </p>
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Use strong privacy settings on social platforms
+                            <li>Be careful about what personal data you share online
+                            </li>
+                            <li>Use secure communications for sensitive information
+                            </li>
+                            <li>Check app permissions before installation
+                            </li>
+                            <li>Report privacy breaches to proper authorities
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can help file complaints with cyber cells, claim compensation for privacy
+                            violations, obtain injunctions against further sharing of private data, and pursue damages
+                            against platforms not maintaining adequate security.</p>
+                    </div>
+
+                    <!-- content 2 -->
+
+                    <div class="content">
+                        <h4>Illegal Downloading
+
+                        </h4>
+                        <p>Copyright violations due to pirated movies, songs, or software can result in civil damages
+                            and, in some cases, criminal penalties.
+                        </p>
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Use legitimate services for content consumption
+                            </li>
+                            <li>Understand what constitutes fair use versus infringement
+                            </li>
+                            <li>Be cautious about sharing copyrighted material
+                            </li>
+                            <li>Check licenses for software before commercial use
+                            </li>
+                            <li>Remove infringing content if notified
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can respond to copyright notices, negotiate settlements with rights holders,
+                            defend against excessive damage claims, and distinguish between direct infringement and
+                            inadvertent sharing.</p>
+                    </div>
+                    <!-- content 3 -->
+                    <div class="content">
+                        <h4>Spreading Misinformation
+                        </h4>
+                        <p>Posting fake news or hate speech on social media can violate IT Rules 2021 and lead to
+                            account suspension or legal consequences.
+                        </p>
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Verify information before sharing
+                            </li>
+                            <li>Be cautious about sharing inflammatory content
+                            </li>
+                            <li>Understand platform policies on content moderation
+                            </li>
+                            <li>Cite sources where appropriate
+                            </li>
+                            <li>Be aware of laws regarding speech that incites violence
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can help contest account suspensions, defend against charges of deliberate
+                            misinformation, establish good faith sharing of information, and address platform content
+                            decisions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 5th CARD -->
+            <div class="category" onclick="showDetails('employment')">
+                <i class="fas fa-briefcase fa-2x" style="color: #6a0dad;"></i> Employment & Labour Laws ➡
+            </div>
+            
+            <div id="modal-employment" class="modal">
+                <div class="modal-header">
+                    <h3>Employment & Labour Laws</h3>
+                    <span class="close-btn" onclick="closeModal('modal-employment')">&times;</span>
+                </div>
+                <!-- buttons -->
+                <div class="tabs">
+                    <button class="tab active" onclick="showContent(0, 'modal-employment')">Wrongful Termination
+
+                    </button>
+                    <button class="tab" onclick="showContent(1, 'modal-employment')">Workplace Harassment
+
+                    </button>
+                    <button class="tab" onclick="showContent(2, 'modal-employment')">Violation of Employment Contracts
+                    </button>
+                </div>
+                <div class="content-container">
+                    <div class="content active">
+                        <h4>Wrongful Termination
+
+                        </h4>
+                        <p>Employers firing without notice or compensation can be sued under various labor laws
+                            depending on the nature of employment.
+                        </p>
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Read and preserve your employment contract
+
+                            <li>Document all performance reviews and feedback
+
+                            </li>
+                            <li>Keep records of all communications regarding employment
+
+                            </li>
+                            <li>Understand applicable notice periods and termination procedures
+
+                            </li>
+                            <li>Request written reasons for termination
+
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>A labor advocate can challenge terminations in labor courts, negotiate settlements, claim
+                            rightful compensation, file for reinstatement where applicable, and address procedural
+                            violations in the termination process.</p>
+                    </div>
+                    <!-- content2 -->
+
+                    <div class="content">
+                        <h4>Workplace Harassment
+                        </h4>
+                        <p>Sexual harassment at work is specifically addressed under the POSH Act, requiring employers
+                            to have prevention mechanisms.
+
+                        </p>
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Document all incidents with dates, times and details
+
+                            </li>
+                            <li>Report to Internal Complaints Committee if available
+
+                            </li>
+                            <li>Identify potential witnesses
+
+                            </li>
+                            <li>Preserve electronic evidence like emails or messages
+
+                            </li>
+                            <li>Understand your company's harassment policy
+
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can help file proper complaints with Internal Committees, represent during
+                            hearings, pursue criminal charges if warranted, claim compensation, and address employer
+                            inaction.</p>
+                    </div>
+
+
+
+
+                    <!-- content 3 -->
+                    <div class="content">
+                        <h4>Violation of Employment Contracts
+
+
+
+                        </h4>
+                        <p>Breaking bonds, non-compete clauses, and other contract violations can lead to civil
+                            litigation and damages.
+
+
+                        </p>
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Understand all clauses before signing employment contracts
+                            </li>
+                            <li>Negotiate reasonable terms for bonds and non-competes
+                            </li>
+                            <li>Document any employer violations of contract terms
+                            </li>
+                            <li>Seek legal advice before taking actions that might breach contracts
+                            </li>
+                            <li>Attempt good-faith negotiations before contract breach
+                            </li>
+                        </ul>
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can review the enforceability of restrictive clauses, negotiate releases from
+                            unreasonable terms, defend against employer claims, and counter-claim for employer breaches
+                            of contract terms.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 CARD -->
+            <div class="category" onclick="showDetails('family')">
+                <i class="fas fa-users fa-2x" style="color: #6a0dad;"></i> Family & Marriage Laws ➡
+            </div>
+            
+            <div id="modal-family" class="modal">
+
+                <div class="modal-header">
+                    <h3>Family & Marriage Laws</h3>
+                    <span class="close-btn" onclick="closeModal('modal-family')">&times;</span>
+                </div>
+                <!-- buttons -->
+                <div class="tabs">
+                    <button class="tab" onclick="showContent(0, 'modal-family')">Dowry-related Cases</button>
+                    <button class="tab" onclick="showContent(1, 'modal-family')">Domestic Violence</button>
+                    <button class="tab" onclick="showContent(2, 'modal-family')">Divorce & Maintenance
+                        Issues</button>
+                    <button class="tab" onclick="showContent(3, 'modal-family')">Adultery</button>
+                </div>
+
+                <div class="content-container">
+                    <!-- content1 -->
+                    <div class="content">
+                        <h4>Dowry-related Cases</h4>
+                        <p>Giving or taking dowry is illegal under the Dowry Prohibition Act and can result in
+                            imprisonment and fines.</p>
+
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Understand the difference between gifts and dowry</li>
+                            <li>Document all gifts exchanged during marriage with proper descriptions</li>
+                            <li>Avoid making demands for specific items/money</li>
+                            <li>Keep witnesses present during gift exchanges</li>
+                            <li>Maintain records of all expenses shared between families</li>
+                        </ul>
+
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can establish that exchanges were gifts, not dowry, gather evidence of false
+                            allegations, prepare defense against misuse of dowry laws, and represent you during
+                            investigations.</p>
+                    </div>
+                    <!-- content2 -->
+                    <div class="content">
+                        <h4>Domestic Violence</h4>
+                        <p>Physical, emotional, economic, or sexual abuse within domestic relationships is
+                            punishable under the Protection of Women from Domestic Violence Act.</p>
+
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Document incidents with dates, times, and details</li>
+                            <li>Report serious incidents to police or protection officers</li>
+                            <li>Seek medical attention and preserve reports for injuries</li>
+                            <li>Identify witnesses who can corroborate claims</li>
+                            <li>Keep evidence of threats or abusive communications</li>
+                        </ul>
+
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can obtain protection orders, residence orders, or maintenance orders,
+                            represent in criminal proceedings, and ensure proper implementation of court directives
+                            for protection.</p>
+                    </div>
+                    <!-- content3-->
+                    <div class="content">
+                        <h4>Divorce & Maintenance Issues</h4>
+                        <p>Legal battles related to alimony, child custody, or maintenance are governed by personal
+                            laws (Hindu Marriage Act, Muslim Personal Law, etc.).</p>
+
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Document contributions to marriage and family expenses</li>
+                            <li>Maintain evidence of parenting involvement for custody cases</li>
+                            <li>Keep records of income and assets acquired during marriage</li>
+                            <li>Attempt mediation before contentious proceedings</li>
+                            <li>Document instances of cruelty or desertion if relevant</li>
+                        </ul>
+
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>A family law advocate can negotiate settlements, represent in maintenance proceedings,
+                            handle custody disputes, file for restraining orders if needed, and ensure equitable
+                            division of assets.</p>
+                    </div>
+                    <!-- content4 -->
+                    <div class="content">
+                        <h4>Adultery</h4>
+                        <p>Though decriminalized, adultery can still be grounds for divorce and can impact
+                            maintenance and custody decisions.</p>
+
+                            <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                        <ul>
+                            <li>Understand that while not criminal, adultery has civil consequences</li>
+                            <li>Be prepared for its impact on divorce proceedings</li>
+                            <li>Consider the impact on child custody determinations</li>
+                            <li>Be aware that evidence of adultery may be presented in court</li>
+                            <li>Seek counseling to address relationship issues</li>
+                        </ul>
+
+                        <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                        <p>An advocate can advise on how adultery might impact divorce proceedings, help present or
+                            defend against such allegations appropriately, and negotiate settlements that account
+                            for these factors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7CARD -->
+            <div class="category" onclick="showDetails('environment')">
+                <i class="fas fa-tree fa-2x" style="color: #6a0dad;"></i> Environmental Laws ➡
+            </div>
+            
+            <div id="modal-environment" class="modal">
+                <div class="modal-header">
+                    <h3>Environmental Laws</h3>
+                    <span class="close-btn" onclick="closeModal('modal-environment')">&times;</span>
+                </div>
+                <div class="tabs">
+                    <button class="tab" onclick="showContent(0, 'modal-environment')">Littering & Pollution
+                        Violations</button>
+                    <button class="tab" onclick="showContent(1, 'modal-environment')">Illegal Construction</button>
+                </div>
+                <!-- content1 -->
+                <div class="content">
+                    <h4>Littering & Pollution Violations</h4>
+                    <p>Burning waste, illegal waste disposal, or causing environmental harm is regulated under the
+                        Environment Protection Act with significant penalties.</p>
+
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                    <ul>
+                        <li>Follow proper waste disposal procedures</li>
+                        <li>Obtain necessary pollution control approvals for businesses</li>
+                        <li>Monitor emissions and discharges from business operations</li>
+                        <li>Implement proper environmental management systems</li>
+                        <li>Stay updated on changing environmental regulations</li>
+                    </ul>
+
+                    <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                    <p>An environmental advocate can help obtain necessary clearances, defend against violation notices,
+                        negotiate with pollution control boards, establish compliance efforts, and appeal excessive
+                        penalty determinations.</p>
+                </div>
+                <!-- content2 -->
+                <div class="content">
+                    <h4>Illegal Construction</h4>
+                    <p>Unauthorized building or zoning law violations can result in demolition orders and financial
+                        penalties.</p>
+
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                    <ul>
+                        <li>Obtain all necessary building permits before construction</li>
+                        <li>Verify zoning regulations for your property</li>
+                        <li>Conduct proper boundary verification</li>
+                        <li>Follow approved building plans strictly</li>
+                        <li>Address notices of violation promptly</li>
+                    </ul>
+
+                    <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                    <p>An advocate can help regularize minor violations where possible, appeal demolition orders,
+                        negotiate timelines for compliance, represent in municipal hearings, and challenge improper
+                        classification of structures.</p>
+                </div>
+            </div>
+
+            <!-- content 8 -->
+
+            <div class="category" onclick="showDetails('religious')">
+                <i class="fas fa-praying-hands fa-2x" style="color: #6a0dad;"></i> Religious & Public Order Laws ➡
+            </div>
+            
+            <div id="modal-religious" class="modal">
+                <div class="modal-header">
+                    <h3>Religious & Public Order</h3>
+                    <span class="close-btn" onclick="closeModal('modal-religious')">&times;</span>
+                </div>
+                <div class="tabs">
+                    <!-- buttons -->
+                    <button class="tab" onclick="showContent(0, 'modal-religious')">Religious Offenses</button>
+                    <button class="tab" onclick="showContent(1, 'modal-religious')">Protests & Unlawful
+                        Assembly</button>
+                </div>
+                <!-- section 1 -->
+                <div class="content">
+                    <h4>Religious Offenses</h4>
+                    <p>Hate speech, blasphemy, or inciting communal violence are offenses under Section 153A IPC and can
+                        lead to imprisonment.</p>
+
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                    <ul>
+                        <li>Be respectful when discussing religious practices</li>
+                        <li>Avoid statements that could incite hatred</li>
+                        <li>Distinguish between criticism of practices versus targeting adherents</li>
+                        <li>Understand context when sharing religious content</li>
+                        <li>Be especially careful on social media platforms</li>
+                    </ul>
+
+                    <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                    <p>An advocate can establish lack of intent to cause communal disharmony, demonstrate the academic
+                        or good faith nature of communications, and contest overbroad interpretations of speech
+                        regulations.</p>
+                </div>
+                <!-- section 2 -->
+                <div class="content">
+                    <h4>Protests & Unlawful Assembly</h4>
+                    <p>Participating in protests without permission can violate Section 144 CrPC, potentially leading to
+                        detention and charges.</p>
+
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                    <ul>
+                        <li>Seek proper permissions before organizing gatherings</li>
+                        <li>Understand where and when assembly prohibitions are in effect</li>
+                        <li>Follow instructions of authorities during protests</li>
+                        <li>Avoid activities that could escalate tensions</li>
+                        <li>Know your rights regarding peaceful assembly</li>
+                    </ul>
+
+                    <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                    <p>An advocate can challenge improper detentions, establish the peaceful nature of gatherings,
+                        defend against charges of rioting or unlawful assembly, and seek permissions for legitimate
+                        protests.</p>
+                </div>
+            </div>
+            <!-- 9CARD-->
+
+            <div class="category" onclick="showDetails('speech')">
+                <i class="fas fa-comment fa-2x" style="color: #6a0dad;"></i> Free Speech & Social Media Laws ➡
+            </div>
+            
+            <div id="modal-speech" class="modal">
+                <div class="modal-header">
+                    <h3>Religious & Public Order</h3>
+                    <span class="close-btn" onclick="closeModal('modal-speech')">&times;</span>
+                </div>
+                <div class="tabs">
+                    <!-- buttons -->
+                    <button class="tab" onclick="showContent(0, 'modal-speech')">Sedition Charges</button>
+                    <button class="tab" onclick="showContent(1, 'modal-speech')">Contempt of Court</button>
+
+                </div>
+                <!-- section 1 -->
+                <div class="content">
+                    <h4>Sedition Charges</h4>
+                    <p>Criticizing the government in a way that incites violence can lead to charges under Section 124A
+                        IPC, though this law has been increasingly scrutinized.</p>
+
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                    <ul>
+                        <li>Understand the distinction between criticism and incitement</li>
+                        <li>Be aware of the constitutional protections for speech</li>
+                        <li>Maintain records of exact statements made publicly</li>
+                        <li>Contextualize criticism within democratic discourse</li>
+                        <li>Avoid calls for violent opposition to authorities</li>
+                    </ul>
+
+                    <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                    <p>An advocate can challenge sedition charges based on constitutional protections, establish that
+                        criticism falls within legitimate democratic discourse, and highlight recent Supreme Court
+                        limitations on sedition prosecutions.</p>
+                </div>
+
+                <!-- section 2 -->
+                <div class="content">
+                    <h4>Contempt of Court</h4>
+                    <p>Criticizing or disrespecting the judiciary can lead to contempt proceedings, fines, and potential
+                        imprisonment.</p>
+
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                    <ul>
+                        <li>Distinguish between criticism of judgments versus impugning motives</li>
+                        <li>Be factually accurate when discussing court proceedings</li>
+                        <li>Avoid statements suggesting courts acted with bias</li>
+                        <li>Understand that ongoing cases require particular care</li>
+                        <li>Frame criticism within academic or reform contexts</li>
+                    </ul>
+
+                    <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                    <p>An advocate can help frame apologies where appropriate, establish good faith in statements,
+                        demonstrate that comments were fair criticism within democratic norms, and appeal contempt
+                        findings.</p>
+                </div>
+            </div>
+            <!-- 10 CARD -->
+            <div class="category" onclick="showDetails('mis')">
+                <i class="fas fa-layer-group fa-2x" style="color: #6a0dad;"></i> Miscellaneous Legal Issues ➡
+            </div>
+            
+
+            <div id="modal-mis" class="modal">
+                <div class="modal-header">
+                    <h3>Religious & Public Order</h3>
+                    <span class="close-btn" onclick="closeModal('modal-mis')">&times;</span>
+                </div>
+                <div class="tabs">
+                    <!-- buttons -->
+                    <button class="tab" onclick="showContent(0, 'modal-mis')">Voting Requirements</button>
+                    <button class="tab" onclick="showContent(1, 'modal-mis')">Document Updates</button>
+                    <button class="tab" onclick="showContent(2, 'modal-mis')">Document Falsification</button>
+
+
+                </div>
+                <!-- section 1 -->
+                <div class="content">
+                    <h4>Voting Requirements</h4>
+                    <p>Government employees are required to vote in elections, and failure to do so can result in
+                        disciplinary action.</p>
+
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                    <ul>
+                        <li>Maintain updated voter registration</li>
+                        <li>Apply for postal ballots if unable to vote in person</li>
+                        <li>Document valid reasons for inability to vote</li>
+                        <li>Understand leave policies for voting days</li>
+                        <li>Keep evidence of having voted (like inked finger photos)</li>
+                    </ul>
+
+                    <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                    <p>An advocate can help establish valid reasons for non-voting, address departmental inquiries, and
+                        ensure proportional responses to voting failures.</p>
+                </div>
+
+                <!-- section 2 -->
+                <div class="content">
+                    <h4>Document Updates</h4>
+                    <p>Issues with passport, Aadhaar, PAN, or voter ID due to incorrect information can lead to service
+                        denials and legal complications.</p>
+
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                    <ul>
+                        <li>Regularly verify information on identification documents</li>
+                        <li>Update address and other details promptly when changed</li>
+                        <li>Maintain consistent information across all documents</li>
+                        <li>Keep copies of all identification documents secure</li>
+                        <li>Follow proper procedures for corrections rather than creating new IDs</li>
+                    </ul>
+
+                    <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                    <p>An advocate can help navigate bureaucratic processes for corrections, address service denials due
+                        to document discrepancies, and resolve identity verification challenges.</p>
+                </div>
+                <!-- section3                 -->
+                <div class="content">
+                    <h4>Document Falsification</h4>
+                    <p>Providing false information in official documents like affidavits or government forms can lead to
+                        prosecution for perjury or fraud.</p>
+
+                        <h5><i class="fas fa-shield-alt fa-2x" style="color: #6a0dad;"></i> How to Safeguard Yourself</h5>
+
+                    <ul>
+                        <li>Verify all information before submitting official documents</li>
+                        <li>Understand the legal significance of signing affidavits</li>
+                        <li>Seek assistance for complex forms if needed</li>
+                        <li>Disclose information fully when legally required</li>
+                        <li>Keep evidence of good faith efforts to provide accurate information</li>
+                    </ul>
+
+                    <h5><i class="fas fa-question-circle fa-2x" style="color: #6a0dad;"></i> What an Advocate Can Do</h5>
+
+                    <p>An advocate can establish lack of intent to defraud, show good faith errors rather than
+                        deliberate falsification, negotiate for opportunities to correct information, and minimize
+                        penalties for inadvertent mistakes.</p>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+    <div class="disclaimer-container">
+        <div class="disclaimer-title">Important Disclaimer</div>
+        <div class="disclaimer-text">
+            This guide is for informational purposes only and should not be considered legal advice.
+            Always consult with a qualified legal professional for specific situations.
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
